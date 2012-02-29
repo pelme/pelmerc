@@ -7,3 +7,6 @@ br = branch
 st = status
 co = checkout
 
+[user]
+	name = Andreas Pelme
+	email = andreas@pelme.se
