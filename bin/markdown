@@ -1,0 +1,3 @@
+#!/bin/bash
+
+redcarpet $1 > /tmp/markdown.html && open /tmp/markdown.html

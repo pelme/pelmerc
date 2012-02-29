@@ -1,0 +1,15 @@
+#!/bin/sh
+
+trap "TIME_TO_EXIT=YES" SIGINT
+
+for (( ; ; ))
+do
+    $@
+
+    if [[ "$TIME_TO_EXIT" ]]; then
+        exit 0
+    fi
+
+    echo "<<<<<<<<<< $@ died. Restarting. >>>>>>>>>>>>>"
+    sleep 0.5
+done

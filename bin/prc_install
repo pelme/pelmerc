@@ -1,0 +1,47 @@
+#!/bin/sh
+
+_link() {
+    filename=$1
+    symlink_name=$2
+
+    if [[ -e $symlink_name ]] && [[ ! -h $symlink_name ]]; then
+
+        read -p "$symlink_name already exists.. do you want to remove it? [y/n] "
+
+        if [[ $REPLY == "y" ]]; then
+            echo "Ok, removing $symlink_name.."
+            rm $symlink_name
+        else
+            echo "Aborting..."
+            exit 1
+        fi
+    fi
+
+    echo "Setting up file $filename -> $symlink_name"
+    ln -sf $filename $symlink_name
+}
+
+
+link_config() {
+    _link $PELMERC/$1 ~/.$1
+}
+
+link_bin() {
+    _link $PELMERC/bin/$1 ~/bin/$1
+}
+
+link_config zshrc
+link_config vimrc
+link_config gitconfig
+
+link_bin prc_install
+link_bin cleanup.sh
+link_bin keep
+link_bin push_migration_numbers.py
+link_bin markdown
+
+# Do not bother if ssh-copy-id is provided
+which ssh-copy-id > /dev/null || link_bin ssh-copy-id
+
+
+echo "All good! Run rehash to get access the binaries!"
