@@ -2,4 +2,5 @@
 
 cd
 git clone git://github.com/pelme/pelmerc.git .pelmerc
+git submodule update --init
 ~/.pelmerc/bin/prc_install
