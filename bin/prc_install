@@ -45,6 +45,4 @@ link_bin markdown
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
 
-chsh -s /bin/zsh
-
 echo "All good! Run rehash to get access the binaries!"
