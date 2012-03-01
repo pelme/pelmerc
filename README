@@ -1,2 +1,6 @@
 My default configs, put into git for easy synchronization between multiple machines.
 
+Install with:
+
+curl https://raw.github.com/pelme/pelmerc/master/bootstrap.sh | sh
+
