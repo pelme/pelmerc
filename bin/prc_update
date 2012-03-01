@@ -5,3 +5,5 @@ PELMERC=$HOME/.pelmerc
 cd $PELMERC
 git pull --rebase
 git submodule update --init
+
+prc_install
