@@ -1,5 +1,7 @@
 export PELMERC=$HOME/.pelmerc
 
+[[ -e ~/.pelmerc.local ]] && source ~/.pelmerc.local
+
 ### OH-MY-ZSH
 ZSH=$HOME/.pelmerc/oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
