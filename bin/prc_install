@@ -45,4 +45,6 @@ link_bin markdown
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
 
-echo "All good! Run rehash to get access the binaries!"
+echo "All good!"
+echo " - Use rehash to update PATH with new commands"
+echo " - Use chsh -s /bin/zsh to change shell"
