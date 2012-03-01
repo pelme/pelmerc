@@ -34,6 +34,7 @@ link_config gitconfig
 mkdir -p $HOME/.virtualenvs
 _link $PELMERC/virtualenv_postactivate $HOME/.virtualenvs/postactivate
 
+mkdir -p $HOME/bin
 link_bin prc_install
 link_bin prc_update
 link_bin cleanup.sh
