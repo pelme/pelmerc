@@ -19,7 +19,7 @@ _link() {
         fi
     fi
 
-    echo "Setting up file $filename -> $symlink_name"
+    echo "Setting up file $symlink_name -> $filename"
     ln -sf $filename $symlink_name
 }
 
