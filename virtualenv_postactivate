@@ -1,1 +1,3 @@
-/Users/andreas/bin/virtualenv_postactivate
+
+# Do not change the prompt
+export PS1="$_OLD_VIRTUAL_PS1"
