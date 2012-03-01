@@ -6,11 +6,11 @@ _link() {
     filename=$1
     symlink_name=$2
 
-    if [[ -e $symlink_name ]] && [[ ! -h $symlink_name ]]; then
+    if [ -e $symlink_name ] && [ ! -h $symlink_name ]; then
 
         read -p "$symlink_name already exists.. do you want to remove it? [y/n] "
 
-        if [[ $REPLY == "y" ]]; then
+        if [ $REPLY == "y" ]; then
             echo "Ok, removing $symlink_name.."
             rm $symlink_name
         else
