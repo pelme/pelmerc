@@ -36,6 +36,9 @@ link_config zshrc
 link_config vimrc
 link_config gitconfig
 
+mkdir -p $HOME/.virtualenvs
+_link $PELMERC/virtualenv_postactivate $HOME/.virtualenvs/postactivate
+
 link_bin prc_install
 link_bin cleanup.sh
 link_bin keep
