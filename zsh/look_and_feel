@@ -9,7 +9,12 @@ function my_git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-PROMPT='$(virtualenv_info)$(my_git_prompt_info)%~ $ '
+function user_host_info() {
+    [ "$IS_LOCAL" != "true" ] && echo "%{$fg_bold[red]%}%n%{$reset_color%}@%m "
+}
+
+PROMPT='$(virtualenv_info)$(my_git_prompt_info)[$(user_host_info)%~] $ '
+
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}["
