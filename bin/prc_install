@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 PELMERC=$HOME/.pelmerc
 
@@ -10,7 +10,7 @@ _link() {
 
         read -p "$symlink_name already exists.. do you want to remove it? [y/n] "
 
-        if [ $REPLY == "y" ]; then
+        if [[ $REPLY == "y" ]]; then
             echo "Ok, removing $symlink_name.."
             rm $symlink_name
         else
