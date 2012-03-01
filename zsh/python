@@ -2,4 +2,8 @@
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 export WORKON_HOME=$HOME/.virtualenvs
 
+# Custom Mac OS install
 [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+
+# Debian
+[[ -e /etc/bash_completion.d/virtualenvwrapper ]] && source /etc/bash_completion.d/virtualenvwrapper
