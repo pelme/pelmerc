@@ -40,6 +40,7 @@ mkdir -p $HOME/.virtualenvs
 _link $PELMERC/virtualenv_postactivate $HOME/.virtualenvs/postactivate
 
 link_bin prc_install
+link_bin prc_update
 link_bin cleanup.sh
 link_bin keep
 link_bin push_migration_numbers.py
