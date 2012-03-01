@@ -1,22 +1,17 @@
 #!/bin/bash
 
 PELMERC=$HOME/.pelmerc
+BACKUP_DESTINATION=$HOME/.pelmerc_backup
 
 _link() {
     filename=$1
     symlink_name=$2
 
+    # Does the target already exist and is not a symlink?
     if [ -e $symlink_name ] && [ ! -h $symlink_name ]; then
-
-        read -p "$symlink_name already exists.. do you want to remove it? [y/n] "
-
-        if [[ $REPLY == "y" ]]; then
-            echo "Ok, removing $symlink_name.."
-            rm $symlink_name
-        else
-            echo "Aborting..."
-            exit 1
-        fi
+        mkdir -p $BACKUP_DESTINATION
+        echo "Moving existing $symlink_name to ~/.pelmerc_backup"
+        mv $symlink_name $BACKUP_DESTINATION
     fi
 
     echo "Setting up file $symlink_name -> $filename"
