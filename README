@@ -2,5 +2,4 @@ My default configs, put into git for easy synchronization between multiple machi
 
 Install with:
 
-curl https://raw.github.com/pelme/pelmerc/master/bootstrap.sh | sh
-
+(U="https://raw.github.com/pelme/pelmerc/master/bootstrap.sh" ; (which wget > /dev/null && wget $U -O -) || curl $U) | sh
