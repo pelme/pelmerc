@@ -42,6 +42,7 @@ link_bin cleanup.sh
 link_bin keep
 link_bin push_migration_numbers.py
 link_bin markdown
+link_bin trans
 
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
