@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import subprocess
+
+modname = sys.argv[1]
+
+module = __import__(modname)
+module_file = module.__file__
+module_dir = os.path.dirname(module_file)
+
+subprocess.call(['subl', module_dir])
