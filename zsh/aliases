@@ -3,6 +3,7 @@ alias g="git"
 alias p="sudo p"
 alias i_do_not_want_to_be_productive_right_now="sudo i_do_not_want_to_be_productive_right_now"
 alias wo=workon
+alias dj=django-admin.py
 
 # Use GNU find is available
 if which gfind > /dev/null; then
