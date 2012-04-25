@@ -44,6 +44,7 @@ link_bin push_migration_numbers.py
 link_bin markdown
 link_bin trans
 link_bin sublmod
+link_bin mirror_tests
 
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id

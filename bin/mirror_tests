@@ -1,0 +1,17 @@
+#!/bin/sh
+
+[ -d tests ] || (echo "$0 must be run from a directory which contains a tests directory"; exit 1)
+
+
+for f in $(find . -name "*.py" -not -iwholename "./tests*" -not -iwholename "./migrations*" -not -iwholename "*__pycache__*" -not -iwholename "./urls.py"); do
+    filename=tests/$f
+    dir=$(dirname $filename)
+
+    mkdir -p $dir
+
+    if [[ ! -e $filename ]]; then
+        echo "Created $filename"
+    fi
+
+    touch $filename
+done
