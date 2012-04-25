@@ -80,11 +80,11 @@ if has("gui_running")
     set background=dark   " adapt colors for background
     set guioptions-=T
     set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅ " mark trailing white space
-    colorscheme railscasts
 else
-    colorscheme elflord   " use this color scheme
     set background=dark   " adapt colors for background
 endif
+
+colorscheme grb256
 
 if has("autocmd")
     " Restore cursor position
