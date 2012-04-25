@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/andreas/code/personalkollen/pk/salary/taxtables'
-let g:netrw_dirhist_2='/Users/andreas/code/django_compressor/tests/.tox'
-let g:netrw_dirhist_3='/Users/andreas/.oh-my-zsh'
