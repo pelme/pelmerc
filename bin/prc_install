@@ -29,6 +29,7 @@ link_bin() {
 
 link_config zshrc
 link_config vimrc
+link_config vim
 link_config gitconfig
 link_config tmux.conf
 
