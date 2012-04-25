@@ -12,19 +12,7 @@ fi
 
 cd $APP
 
-MANAGE_PY="$2"
-if [[ "x$2" = "x" ]]; then
-	if [[ -x "../manage.py" ]]; then
-		MANAGE_PY="../manage.py"
-	elif [[ -x "../../manage.py" ]]; then
-		MANAGE_PY="../../manage.py"
-	else
-		echo "manage.py could not be found"
-		exit 1
-	fi
-fi
-
-$MANAGE_PY makemessages -a
+django-admin.py makemessages -a
 
 
 find . -name "*.po" | xargs open -a poedit
