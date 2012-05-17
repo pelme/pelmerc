@@ -32,8 +32,6 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.DS_Store,*.db
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]  
 filetype plugin indent on " turn on the indent plugins
 
-set t_Co=256
-
 set noautoindent    " turn off by default, enable for specific filetypes
 set nosmartindent   " turn off by default, enable for specific filetypes
 set nocindent       " turn off by default, enable for specific filetypes
@@ -84,7 +82,7 @@ else
     set background=dark   " adapt colors for background
 endif
 
-colorscheme grb256
+colorscheme molokai
 
 if has("autocmd")
     " Restore cursor position
