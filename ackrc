@@ -1,0 +1,5 @@
+--sort-files
+--ignore-dir=migrations
+--type-set=css=less,sass
+
+--type-set=MARKDOWN=md,mkd,markdown
