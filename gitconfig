@@ -10,6 +10,7 @@
     br = branch
     st = status
     co = checkout
+    ci = commit
     di = diff
     dc = diff --cached
     amend = commit --amend
