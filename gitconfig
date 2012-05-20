@@ -11,6 +11,7 @@
     st = status
     co = checkout
     ci = commit
+    aa = add --all
     di = diff
     dc = diff --cached
     amend = commit --amend
