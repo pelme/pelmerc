@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set nocompatible    " use vim defaults
 set ls=2            " allways show status line
 set tabstop=4       " numbers of spaces of tab character
