@@ -5,6 +5,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 nicest_python_interpreter() {
     for prog in bpython ipython python ; do
         (( $+commands[$prog] )) || continue
+        echo -ne "\033]0;${prog}\007"  # Set terminal title
         $prog
         break
     done
