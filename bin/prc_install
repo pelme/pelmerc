@@ -15,6 +15,7 @@ _link() {
     fi
 
     echo "Setting up file $symlink_name -> $filename"
+    rm -f $symlink_name
     ln -sf $filename $symlink_name
 }
 
