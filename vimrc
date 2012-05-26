@@ -17,7 +17,6 @@ set number          " show line numbers
 set numberwidth=4   " line numbering takes up 5 spaces
 set ignorecase      " ignore case when searching
 set nowrap          " stop lines from wrapping
-"set noignorecase   " don't ignore case
 set title           " show title in console title bar
 set ttyfast         " smoother changes
 "set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
@@ -37,12 +36,6 @@ filetype plugin indent on " turn on the indent plugins
 set noautoindent    " turn off by default, enable for specific filetypes
 set nosmartindent   " turn off by default, enable for specific filetypes
 set nocindent       " turn off by default, enable for specific filetypes
-
-" NERD_tree config
-let NERDTreeChDirMode=2
-let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
-let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\.bak$', '\~$']
-let NERDTreeShowBookmarks=1
 
 " VCS Command Configs
 let mapleader = ","
