@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Thanks, Jacob Kaplan-Moss:
+# http://jacobian.org/writing/auto-building-sphinx/
+
+watchmedo shell-command \
+              --patterns="*.txt" \
+              --patterns="*.rst" \
+              --ignore-pattern='_build/*' \
+              --recursive \
+              --command='make html'

@@ -51,6 +51,7 @@ link_bin trans
 link_bin sublmod
 link_bin mirror_tests
 link_bin pywatch
+link_bin sphinx-autobuild-html
 
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
