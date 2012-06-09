@@ -1,9 +1,8 @@
 if [[ $(uname) == "Darwin" ]]; then
     # Work around some GCC problems on Mac OS X
     export ARCHFLAGS="-arch x86_64"
+fi
 
-    ## Color ls, annotate names with /, @, * and show human readable sizes
-    export CLICOLOR=1
-    export LSCOLORS=ExFxCxDxBxegedabagacad
-    alias ls='ls -GhF'
+if [[ -x `which gls` ]]; then
+    alias ls='gls --color'
 fi
