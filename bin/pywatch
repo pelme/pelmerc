@@ -1,5 +1,6 @@
 #!/bin/bash
 
+$*
 
 watchmedo shell-command --wait --recursive --patterns="*.py" --command="$*"
 
