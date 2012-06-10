@@ -3,6 +3,10 @@
 # Thanks, Jacob Kaplan-Moss:
 # http://jacobian.org/writing/auto-building-sphinx/
 
+CMD='make html'
+
+$CMD
+
 watchmedo shell-command \
               --patterns="*.txt" \
               --patterns="*.rst" \
@@ -10,4 +14,4 @@ watchmedo shell-command \
               --ignore-pattern='_build/*' \
               --recursive \
               --wait \
-              --command='make html'
+              --command="$CMD"
