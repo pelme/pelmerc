@@ -6,6 +6,8 @@
 watchmedo shell-command \
               --patterns="*.txt" \
               --patterns="*.rst" \
+              --patterns="*.swp" \
               --ignore-pattern='_build/*' \
               --recursive \
+              --wait \
               --command='make html'
