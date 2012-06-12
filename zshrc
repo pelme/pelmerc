@@ -6,7 +6,7 @@ export PELMERC=$HOME/.pelmerc
 ZSH=$HOME/.pelmerc/oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git brew django osx pip)
+plugins=(git brew django osx pip github)
 
 source $ZSH/oh-my-zsh.sh
 
