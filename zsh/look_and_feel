@@ -1,5 +1,3 @@
-local return_code="%(?..%{$fg_bold[red]%}%? ↵%{$reset_color%})"
-
 function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo "%{$fg_bold[cyan]%}["`basename $VIRTUAL_ENV`"]%{$reset_color%} "
 }
@@ -17,13 +15,11 @@ function user_host_path_info() {
     if [[ "$IS_LOCAL" == "true" ]]; then
         echo "%~ "
     else
-        echo "[$debian_chroot_info%{$fg_bold[red]%}%n%{$reset_color%}@%m %~]"
+        echo "[$debian_chroot_info%{$fg_bold[red]%}%n  %{$reset_color%}@%m %~]"
     fi
 }
 
 PROMPT='$(virtualenv_info)$(my_git_prompt_info)$(user_host_path_info)%(!.#.\$) '
-
-RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="] %{$reset_color%}"
