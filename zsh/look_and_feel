@@ -17,7 +17,7 @@ function user_host_path_info() {
     if [[ "$IS_LOCAL" == "true" ]]; then
         echo "%~ "
     else
-        echo "[$debian_chroot_info$fg_bold[red]%}%n%{$reset_color%}@%m %~]"
+        echo "[$debian_chroot_info%{$fg_bold[red]%}%n%{$reset_color%}@%m %~]"
     fi
 }
 
