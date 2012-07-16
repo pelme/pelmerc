@@ -14,6 +14,8 @@
     aa = add --all
     di = diff
     dc = diff --cached
+    rs = reset
+    rsh = reset HEAD
     amend = commit --amend
 
     head = !git l -1
@@ -27,3 +29,7 @@
 
 [push]
 	default = current
+
+[diff "po"]
+    textconv=msgcat --no-location --no-wrap --sort-output
+
