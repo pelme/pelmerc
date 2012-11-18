@@ -1,0 +1,2 @@
+[ -e /usr/local/Cellar/autoenv/0.1.0/activate.sh ] && source /usr/local/Cellar/autoenv/0.1.0/activate.sh
+
