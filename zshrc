@@ -10,8 +10,9 @@ plugins=(git brew django osx pip github)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/bin:$PATH
+export PATH="$HOME/bin:/usr/loca/heroku/bin:$PATH"
 
 for x in $PELMERC/zsh/*; do
     source $x
 done
+
