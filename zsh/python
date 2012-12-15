@@ -10,3 +10,17 @@ nicest_python_interpreter() {
         break
     done
 }
+
+pywatch() {
+    "$@"
+
+    # Put the quotes back on. SIGH.
+    quoted=""
+    for X in "$@"
+    do
+       quoted="$quoted \"$X\""
+    done
+
+    watchmedo shell-command --wait --recursive --patterns="*.py" \
+        --command="$quoted"
+}
