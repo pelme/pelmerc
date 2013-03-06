@@ -48,6 +48,8 @@ let mapleader = ","
 set expandtab       " tabs are converted to spaces
 set sm              " show matching braces, somewhat annoying...
 
+map <leader>u :wa<cr>:!clear;<test_cmd>
+map <leader>t :NERDTreeToggle<cr>
 " Prevent Vim from clobbering the scrollback buffer. See
 " " http://www.shallowsky.com/linux/noaltscreen.html
 "set t_ti= t_te=
