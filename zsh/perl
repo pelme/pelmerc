@@ -1,0 +1,13 @@
+perlwatch() {
+    "$@"
+
+    # Put the quotes back on. SIGH.
+    quoted=""
+    for X in "$@"
+    do
+       quoted="$quoted \"$X\""
+    done
+
+    watchmedo shell-command --wait --recursive --patterns="*.pm;*.t;*.pl" \
+        --command="$quoted"
+}
