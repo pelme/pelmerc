@@ -10,3 +10,6 @@
 [submodule "vim/bundle/puppet"]
 	path = vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "vim/bundle/salt-vim"]
+	path = vim/bundle/salt-vim
+	url = git://github.com/saltstack/salt-vim.git
