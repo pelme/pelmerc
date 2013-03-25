@@ -14,7 +14,7 @@ __git_files () {
 }
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$HOME/bin:/usr/loca/heroku/bin:$PATH"
+export PATH="$HOME/bin:/usr/loca/heroku/bin:/usr/local/share/npm/bin:$PATH"
 
 for x in $PELMERC/zsh/*; do
     source $x
