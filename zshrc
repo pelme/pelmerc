@@ -8,6 +8,10 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
 plugins=(git brew django osx pip github)
 
+
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/loca/heroku/bin:$PATH"
