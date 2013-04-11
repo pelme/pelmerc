@@ -14,6 +14,7 @@ set title           " show title in console title bar
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.DS_Store,*.db
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]  
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
+set mouse=a
 
 " tabs/spaces
 set tabstop=4       " numbers of spaces of tab character
