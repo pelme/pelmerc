@@ -75,6 +75,8 @@ if has("autocmd")
     au FileType py inoremap # X#
     au FileType py set expandtab
     au FileType py set omnifunc=pythoncomplete#Complete
+    let g:syntastic_python_checkers=['flake8', 'pyflakes']
+    let g:syntastic_python_flake8_args="--ignore=E501"
 endif
 
 " vimrc editing helpers
