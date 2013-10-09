@@ -24,3 +24,7 @@ pywatch() {
     watchmedo shell-command --wait --recursive --patterns="*.py" \
         --command="$quoted"
 }
+
+function workon_unless_active {
+    [[ $(basename "$VIRTUAL_ENV") == "$1" ]] || workon $1
+}

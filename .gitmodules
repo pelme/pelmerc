@@ -22,3 +22,6 @@
 [submodule "vim/bundle/coffe-script"]
 	path = vim/bundle/coffe-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "autoenv"]
+	path = autoenv
+	url = git://github.com/kennethreitz/autoenv.git

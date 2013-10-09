@@ -1,6 +1,0 @@
-[ -e /usr/local/Cellar/autoenv/0.1.0/activate.sh ] && source /usr/local/Cellar/autoenv/0.1.0/activate.sh
-
-function workon_unless_active {
-    [[ $(basename "$VIRTUAL_ENV") == "$1" ]] || workon $1
-}
-
