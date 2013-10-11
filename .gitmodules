@@ -25,3 +25,6 @@
 [submodule "autoenv"]
 	path = autoenv
 	url = git://github.com/kennethreitz/autoenv.git
+[submodule "vim/bundle/Command-T"]
+	path = vim/bundle/Command-T
+	url = https://github.com/wincent/Command-T.git
