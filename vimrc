@@ -83,6 +83,9 @@ map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
 map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
+" ,, to switch between two files
+nnoremap <leader><leader> <c-^>
+
 " Viewport Controls
 " ie moving between split panes
 
