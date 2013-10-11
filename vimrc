@@ -85,13 +85,23 @@ map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc fi
 
 " Viewport Controls
 " ie moving between split panes
-map <silent>,h <C-w>h 
-map <silent>,j <C-w>j
-map <silent>,k <C-w>k
-map <silent>,l <C-w>l
 
+" Map Putty key codes for Ctrl+arrow keys
+map <ESC>[A <C-Up>
+map <ESC>[B <C-Down>
+map <ESC>[C <C-Right>
+map <ESC>[D <C-Left>
 
+nnoremap <C-Left> :vertical resize -4<cr>
+nnoremap <C-Down> :resize +4<cr>
+nnoremap <C-Up> :resize -4<cr>
+nnoremap <C-Right> :vertical resize +4<cr>
 
+" Move between splits with ctrl+[hjkl]
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 syntax on                 " syntax highlighing
 set background=dark   " adapt colors for background
