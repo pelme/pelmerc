@@ -76,8 +76,8 @@ if has("autocmd")
     au FileType py set omnifunc=pythoncomplete#Complete
     let g:syntastic_python_checkers=['flake8', 'pyflakes']
     let g:syntastic_python_flake8_args="--ignore=E501"
+    let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
 endif
-
 " vimrc editing helpers
 map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
