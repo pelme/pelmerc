@@ -3,8 +3,6 @@ call pathogen#infect()
 set nocompatible    " use vim defaults
 
 " look/feel
-
-
 set laststatus=2    " allways show status line
 set hidden          " allow hidden buffers
 set showcmd         " display incomplete commands
@@ -21,7 +19,7 @@ set shiftwidth=4    " numbers of spaces to (auto)indent
 set scrolloff=3     " keep 3 lines context when scrolling
 
 if exists('+colorcolumn')
-    set colorcolumn=80
+    set colorcolumn=100
 endif
 
 " searching
@@ -47,10 +45,12 @@ let mapleader = ","
 
 set expandtab       " tabs are converted to spaces
 set sm              " show matching braces, somewhat annoying...
+set noswapfile      " make vim work with watchdog
+set nowritebackup
+set vb              " disable annoying audible bell in macvim
 
-map <leader>u :wa<cr>:!clear;<test_cmd>
-map <leader>n :NERDTreeToggle<cr>
 " Prevent Vim from clobbering the scrollback buffer. See
+"
 " " http://www.shallowsky.com/linux/noaltscreen.html
 "set t_ti= t_te=
 "
@@ -74,22 +74,33 @@ if has("autocmd")
     au FileType py inoremap # X#
     au FileType py set expandtab
     au FileType py set omnifunc=pythoncomplete#Complete
+
     let g:syntastic_python_checkers=['flake8', 'pyflakes']
     let g:syntastic_python_flake8_args="--ignore=E501"
     let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
+    let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 endif
+
 " vimrc editing helpers
 map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
 map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
-" ,, to switch between two files
+" make it possible to easily create new files in the same directories as
+" existing files
+cabbr <expr> %% expand('%:p:h')
+
+
+" buffer management
+nmap <leader>l :ls<cr>
+nmap <leader>n :bn<cr>
+nmap <leader>p :bp<cr>
+" close the current buffer without closing the windows
+nmap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader><leader> <c-^>
 
-" Viewport Controls
-" ie moving between split panes
 
-" Map Putty key codes for Ctrl+arrow keys
+" split management
 map <ESC>[A <C-Up>
 map <ESC>[B <C-Down>
 map <ESC>[C <C-Right>
@@ -107,7 +118,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 syntax on                 " syntax highlighing
+match Todo /\s\+$/  
 set background=dark   " adapt colors for background
+set guifont=Consolas:h17
 colorscheme molokai
 
 
