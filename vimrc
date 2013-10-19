@@ -81,6 +81,9 @@ if has("autocmd")
     let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 endif
 
+nnoremap ; :
+nmap <silent> ,/ :nohlsearch<cr>
+
 " vimrc editing helpers
 map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
