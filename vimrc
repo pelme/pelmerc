@@ -9,7 +9,7 @@ set showcmd         " display incomplete commands
 set number          " show line numbers
 set numberwidth=4   " line numbering takes up 5 spaces
 set title           " show title in console title bar
-set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.DS_Store,*.db
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]  
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
@@ -90,6 +90,7 @@ map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc fi
 " existing files
 cabbr <expr> %% expand('%:p:h')
 
+nmap <leader>f :CommandTFlush<cr>
 
 " buffer management
 nmap <leader>l :ls<cr>
