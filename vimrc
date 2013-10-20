@@ -81,8 +81,19 @@ if has("autocmd")
     let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 endif
 
+" shortcuts
 nnoremap ; :
+nmap <leader>w :w<cr>
 nmap <silent> ,/ :nohlsearch<cr>
+
+let g:jedi#use_tabs_not_buffers = 0
+let g:jedi#use_splits_not_buffers = "bottom"
+let g:jedi#goto_assignments_command = ""
+let g:jedi#goto_definitions_command = ""
+
+noremap <leader>jg :call jedi#goto_assignments()<cr>
+noremap <leader>jd :call jedi#goto_definitions()<cr>
+
 
 " vimrc editing helpers
 map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
@@ -95,11 +106,11 @@ cabbr <expr> %% expand('%:p:h')
 
 nmap <leader>f :CommandTFlush<cr>
 
+
 " buffer management
 nmap <leader>l :ls<cr>
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
-" close the current buffer without closing the windows
 nmap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader><leader> <c-^>
 
