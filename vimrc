@@ -90,9 +90,11 @@ let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#use_splits_not_buffers = "bottom"
 let g:jedi#goto_assignments_command = ""
 let g:jedi#goto_definitions_command = ""
+let g:jedi#usages_command = ""
 
 noremap <leader>jg :call jedi#goto_assignments()<cr>
 noremap <leader>jd :call jedi#goto_definitions()<cr>
+noremap <leader>jn :call jedi#usages()<cr>
 
 
 " vimrc editing helpers
