@@ -9,7 +9,7 @@ set showcmd         " display incomplete commands
 set number          " show line numbers
 set numberwidth=4   " line numbering takes up 5 spaces
 set title           " show title in console title bar
-set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]  
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
