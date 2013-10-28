@@ -9,12 +9,12 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git brew django osx pip github)
 
 
-__git_files () { 
-    _wanted files expl 'local files' _files     
+__git_files () {
+    _wanted files expl 'local files' _files
 }
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$HOME/bin:/usr/loca/heroku/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 for x in $PELMERC/zsh/*; do
     source $x
