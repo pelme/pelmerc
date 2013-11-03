@@ -12,7 +12,7 @@ fi
 
 cd $APP
 
-django-admin.py makemessages -a
+django-admin.py makemessages -a --no-location
 
 
 find . -name "*.po" | xargs open -a poedit
