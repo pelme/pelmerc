@@ -9,8 +9,7 @@ set showcmd         " display incomplete commands
 set number          " show line numbers
 set numberwidth=4   " line numbering takes up 5 spaces
 set title           " show title in console title bar
-set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**
-set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]  
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**,**/build/**,*.tar.gz,*.tar.bz2
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 " tabs/spaces
@@ -65,12 +64,12 @@ if has("autocmd")
     au FileType helpfile set nonumber      " no line numbers when viewing help
     au FileType helpfile nnoremap <buffer><cr> <c-]>   " Enter selects subject
     au FileType helpfile nnoremap <buffer><bs> <c-T>   " Backspace to go back
-    
+
     au FileType cpp,c,java,sh,pl,php,py,asp  set autoindent
     au FileType cpp,c,java,sh,pl,php,py,asp  set smartindent
     au FileType cpp,c,java,sh,pl,php,py,asp  set cindent
     au FileType py set foldmethod=indent
-    au FileType py set textwidth=79  " PEP-8 friendly
+    au FileType py set textwidth=99  " PEP-8 friendly
     au FileType py inoremap # X#
     au FileType py set expandtab
     au FileType py set omnifunc=pythoncomplete#Complete
@@ -136,9 +135,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 syntax on                 " syntax highlighing
-match Todo /\s\+$/  
+match Todo /\s\+$/
 set background=dark   " adapt colors for background
-set guifont=Consolas:h17
+set guifont=Source\ Code\ Pro:h14
+let g:molokai_original = 1
 colorscheme molokai
 
 
