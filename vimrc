@@ -83,7 +83,7 @@ endif
 " shortcuts
 nnoremap ; :
 nmap <leader>w :w<cr>
-nmap <silent> ,/ :nohlsearch<cr>
+nmap <silent> <leader>/ :nohlsearch<cr>
 nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 let g:jedi#use_tabs_not_buffers = 0
