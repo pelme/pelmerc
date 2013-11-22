@@ -129,18 +129,15 @@ nnoremap <C-Up> :resize -4<cr>
 nnoremap <C-Right> :vertical resize +4<cr>
 
 " Move between splits with ctrl+[hjkl]
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+let g:tmux_navigator_no_mappings = 0
 
 syntax on                 " syntax highlighing
 match Todo /\s\+$/
 set background=dark   " adapt colors for background
 set guifont=Source\ Code\ Pro:h14
 let g:molokai_original = 1
-colorscheme molokai
-
+colorscheme molokai 
+set t_Co=256
 
 " force putty to use colors
 if &term =~ "xterm"
