@@ -17,6 +17,7 @@
     rs = reset
     rsh = reset HEAD
     amend = commit --amend
+    f = fetch --all
 
     head = !git l -1
     h = !git head
