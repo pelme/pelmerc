@@ -134,9 +134,9 @@ let g:tmux_navigator_no_mappings = 0
 syntax on                 " syntax highlighing
 match Todo /\s\+$/
 set background=dark   " adapt colors for background
-set guifont=Source\ Code\ Pro:h14
+set guifont=Source\ Code\ Pro:h18
 let g:molokai_original = 1
-colorscheme molokai 
+colorscheme molokai
 set t_Co=256
 
 " force putty to use colors
