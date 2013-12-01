@@ -98,7 +98,6 @@ noremap <leader>jn :call jedi#usages()<cr>
 
 
 " vimrc editing helpers
-map <leader>v :sp ~/.vimrc<cr> " edit my .vimrc file in a split
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
 map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
@@ -123,10 +122,11 @@ map <ESC>[B <C-Down>
 map <ESC>[C <C-Right>
 map <ESC>[D <C-Left>
 
-nnoremap <C-Left> :vertical resize -4<cr>
-nnoremap <C-Down> :resize +4<cr>
-nnoremap <C-Up> :resize -4<cr>
-nnoremap <C-Right> :vertical resize +4<cr>
+nnoremap <C-Left> :vertical resize -3<cr>
+nnoremap <C-Down> :resize +3<cr>
+nnoremap <C-Up> :resize -3<cr>
+nnoremap <C-Right> :vertical resize +3<cr>
+nnoremap <leader>v :vertical size 105<cr>
 
 " Move between splits with ctrl+[hjkl]
 let g:tmux_navigator_no_mappings = 0
@@ -134,7 +134,12 @@ let g:tmux_navigator_no_mappings = 0
 syntax on                 " syntax highlighing
 match Todo /\s\+$/
 set background=dark   " adapt colors for background
-set guifont=Source\ Code\ Pro:h18
+set guifont=Source\ Code\ Pro:h13
+" remove scrollbars and toolbars
+set guioptions-=T
+set guioptions-=L
+set guioptions-=r
+
 let g:molokai_original = 1
 colorscheme molokai
 set t_Co=256
