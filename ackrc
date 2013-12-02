@@ -2,5 +2,5 @@
 --ignore-dir=migrations
 --ignore-dir=build
 --type-set=css=less,sass
-
 --type-set=MARKDOWN=md,mkd,markdown
+--nosql

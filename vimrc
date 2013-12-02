@@ -107,6 +107,7 @@ cabbr <expr> %% expand('%:p:h')
 
 nmap <leader>f :CommandTFlush<cr>
 
+nnoremap <leader>a :Ack<space>
 
 " buffer management
 nmap <leader>l :ls<cr>
@@ -140,8 +141,7 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-let g:molokai_original = 1
-colorscheme molokai
+colorscheme mustang
 set t_Co=256
 
 " force putty to use colors
