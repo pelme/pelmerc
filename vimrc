@@ -98,21 +98,23 @@ noremap <leader>jn :call jedi#usages()<cr>
 
 
 " vimrc editing helpers
-map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
-map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
+map <leader>ee :e ~/.vimrc<cr>      " edit my .vimrc file
+map <leader>eu :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
 " make it possible to easily create new files in the same directories as
 " existing files
 cabbr <expr> %% expand('%:p:h')
 
-nmap <leader>f :CommandTFlush<cr>
+nmap <leader>t :CtrlP<cr>
+nmap <leader>b :CtrlPBuffer<cr>
+nmap <leader>f :CtrlPClearAllCaches<cr>
 
 nnoremap <leader>a :Ack<space>
 
 " buffer management
 nmap <leader>l :ls<cr>
-nmap <leader>n :bn<cr>
-nmap <leader>p :bp<cr>
+map <C-n> :bn<cr>
+map <C-p> :bp<cr>
 nmap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader><leader> <c-^>
 
