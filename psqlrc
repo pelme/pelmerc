@@ -1,0 +1,7 @@
+\set QUIET ON
+\pset null 'NULL'
+\timing
+\pset border 2
+\pset linestyle=unicode
+\set COMP_KEYWORD_CASE upper
+\set QUIET OFF

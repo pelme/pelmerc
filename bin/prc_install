@@ -37,6 +37,7 @@ link_config githelpers
 link_config tmux.conf
 link_config ackrc
 link_config bpython
+link_config psqlrc
 
 mkdir -p $HOME/.virtualenvs
 _link $PELMERC/virtualenv_postactivate $HOME/.virtualenvs/postactivate
