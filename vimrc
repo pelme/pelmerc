@@ -98,8 +98,8 @@ noremap <leader>jn :call jedi#usages()<cr>
 
 
 " vimrc editing helpers
-map <leader>ee :e ~/.vimrc<cr>      " edit my .vimrc file
-map <leader>eu :source ~/.vimrc<cr> " update the system settings from my vimrc file
+map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
+map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
 " make it possible to easily create new files in the same directories as
 " existing files
