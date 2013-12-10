@@ -20,3 +20,4 @@ for x in $PELMERC/zsh/*; do
     source $x
 done
 
+source $PELMERC/autoenv/activate.sh
