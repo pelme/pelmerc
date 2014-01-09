@@ -49,6 +49,7 @@ link_bin keep
 link_bin push_migration_numbers.py
 link_bin markdown
 link_bin trans
+link_bin poedit
 link_bin sublmod
 link_bin mirror_tests
 link_bin sphinx-autobuild-html

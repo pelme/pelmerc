@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/Applications/Poedit.app/Contents/MacOS/Poedit $*
