@@ -9,7 +9,7 @@ set showcmd         " display incomplete commands
 set number          " show line numbers
 set numberwidth=4   " line numbering takes up 5 spaces
 set title           " show title in console title bar
-set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**,**/build/**,*.tar.gz,*.tar.bz2
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**,**/build/**,*.tar.gz,*.tar.bz2,**/venv/**,**/.tox/**
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 " tabs/spaces
@@ -75,7 +75,7 @@ if has("autocmd")
     au FileType py set omnifunc=pythoncomplete#Complete
 
     let g:syntastic_python_checkers=['flake8', 'pyflakes']
-    let g:syntastic_python_flake8_args="--ignore=E501"
+    let g:syntastic_python_flake8_args="--ignore=E501,E241"
     let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
     let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 endif
@@ -83,6 +83,7 @@ endif
 " shortcuts
 nnoremap ; :
 nmap <leader>w :w<cr>
+nmap <leader>q :q<cr>
 nmap <silent> <leader>/ :nohlsearch<cr>
 nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
@@ -113,17 +114,8 @@ nnoremap <leader>a :Ack<space>
 
 " buffer management
 nmap <leader>l :ls<cr>
-map <C-n> :bn<cr>
-map <C-p> :bp<cr>
-nmap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
-nnoremap <leader><leader> <c-^>
-
-
-" split management
-map <ESC>[A <C-Up>
-map <ESC>[B <C-Down>
-map <ESC>[C <C-Right>
-map <ESC>[D <C-Left>
+nnoremap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
+nnoremap <leader><leader> :b#<cr>
 
 nnoremap <C-Left> :vertical resize -3<cr>
 nnoremap <C-Down> :resize +3<cr>
@@ -131,19 +123,35 @@ nnoremap <C-Up> :resize -3<cr>
 nnoremap <C-Right> :vertical resize +3<cr>
 nnoremap <leader>v :vertical size 105<cr>
 
+nnoremap <silent> <leader>h :TmuxNavigateLeft<cr>
+nnoremap <silent> <leader>j :TmuxNavigateDown<cr>
+nnoremap <silent> <leader>k :TmuxNavigateUp<cr>
+nnoremap <silent> <leader>l :TmuxNavigateRight<cr>
+
+nnoremap <silent> <space> :AV<cr>
+
+
+" 'stamp' the word under the cursor
+nnoremap S diw"0P
+
+" better show available buffers when pressing tab on :b
+set wildchar=<Tab> wildmenu wildmode=full
+
+set splitright
+
 " Move between splits with ctrl+[hjkl]
 let g:tmux_navigator_no_mappings = 0
 
 syntax on                 " syntax highlighing
 match Todo /\s\+$/
 set background=dark   " adapt colors for background
-set guifont=Source\ Code\ Pro:h13
+set guifont=Source\ Code\ Pro:h14
 " remove scrollbars and toolbars
 set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-colorscheme mustang
+colorscheme molokai
 set t_Co=256
 
 " force putty to use colors

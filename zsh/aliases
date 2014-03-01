@@ -1,4 +1,3 @@
-
 alias g="git"
 alias gi="git"
 alias gpr="git pull --rebase"
@@ -8,6 +7,7 @@ alias i_do_not_want_to_be_productive_right_now="sudo i_do_not_want_to_be_product
 alias wo=workon
 alias dj=django-admin.py
 alias py=nicest_python_interpreter
+alias s="fab sanity_check"
 
 
 # Use GNU find is available
