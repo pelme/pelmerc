@@ -88,3 +88,6 @@
 [submodule "vim/bundle/vim-gitgutter"]
 	path = vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/vim-lucius"]
+	path = vim/bundle/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git

@@ -2,4 +2,5 @@
 \pset null 'NULL'
 \timing
 \set COMP_KEYWORD_CASE upper
+\x on
 \set QUIET OFF

@@ -2,6 +2,7 @@ alias g="git"
 alias gi="git"
 alias gpr="git pull --rebase"
 alias gs="git status"
+alias c='git commit -am'
 alias p="sudo p"
 alias i_do_not_want_to_be_productive_right_now="sudo i_do_not_want_to_be_productive_right_now"
 alias wo=workon

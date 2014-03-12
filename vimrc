@@ -144,14 +144,18 @@ let g:tmux_navigator_no_mappings = 0
 
 syntax on                 " syntax highlighing
 match Todo /\s\+$/
-set background=dark   " adapt colors for background
+set background=light   " adapt colors for background
 set guifont=Source\ Code\ Pro:h14
 " remove scrollbars and toolbars
 set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-colorscheme molokai
+colorscheme lucius
+let g:lucius_style='light'
+let g:lucius_contrast='normal'
+let g:lucius_contrast_bg='high'
+
 set t_Co=256
 
 " force putty to use colors
