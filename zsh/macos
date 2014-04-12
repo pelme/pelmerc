@@ -6,3 +6,6 @@ fi
 if [[ -x `which gls` ]]; then
     alias ls='gls --color'
 fi
+
+# Avoid Mavericks XCode errors from failing compilations
+export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
