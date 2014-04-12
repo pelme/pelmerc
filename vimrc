@@ -117,10 +117,10 @@ nmap <leader>l :ls<cr>
 nnoremap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader><leader> :b#<cr>
 
-nnoremap <C-Left> :vertical resize -3<cr>
-nnoremap <C-Down> :resize +3<cr>
-nnoremap <C-Up> :resize -3<cr>
-nnoremap <C-Right> :vertical resize +3<cr>
+nnoremap <C-Left> :vertical resize -1<cr>
+nnoremap <C-Down> :resize +1<cr>
+nnoremap <C-Up> :resize -1<cr>
+nnoremap <C-Right> :vertical resize +1<cr>
 nnoremap <leader>v :vertical size 105<cr>
 
 nnoremap <silent> <leader>h :TmuxNavigateLeft<cr>
@@ -151,8 +151,8 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-colorscheme lucius
-let g:lucius_style='light'
+colorscheme molokai
+let g:lucius_style='dark'
 let g:lucius_contrast='normal'
 let g:lucius_contrast_bg='high'
 
