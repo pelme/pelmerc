@@ -151,10 +151,12 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-colorscheme molokai
-let g:lucius_style='dark'
-let g:lucius_contrast='normal'
-let g:lucius_contrast_bg='high'
+if !empty($PRESENTATION)
+    colorscheme lucius
+    LuciusWhite
+else
+    colorscheme molokai
+endif
 
 set t_Co=256
 
