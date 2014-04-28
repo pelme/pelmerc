@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export LIGHT_THEME=y
+exec zsh

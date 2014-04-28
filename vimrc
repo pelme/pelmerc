@@ -151,7 +151,7 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
-if !empty($PRESENTATION)
+if !empty($LIGHT_THEME)
     colorscheme lucius
     LuciusWhite
 else

@@ -39,6 +39,7 @@ link_config ackrc
 link_config bpython
 link_config psqlrc
 
+
 mkdir -p $HOME/.virtualenvs
 
 mkdir -p $HOME/bin
@@ -53,6 +54,7 @@ link_bin poedit
 link_bin sublmod
 link_bin mirror_tests
 link_bin sphinx-autobuild-html
+link_bin shell_light
 
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
