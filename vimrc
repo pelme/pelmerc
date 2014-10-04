@@ -110,7 +110,7 @@ nmap <leader>t :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
 nmap <leader>f :CtrlPClearAllCaches<cr>
 
-nnoremap <leader>a :Ack<space>
+nnoremap <leader>a :Ag<space>
 
 " buffer management
 nmap <leader>l :ls<cr>
