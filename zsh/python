@@ -1,6 +1,7 @@
 export WORKON_HOME=$HOME/.virtualenvs
 export PYTHONIOENCODING="UTF-8"
 export VIRTUAL_ENV_DISABLE_PROMPT="y"
+export FLAKE8_STRICT=t
 
 nicest_python_interpreter() {
     for prog in bpython ipython python ; do

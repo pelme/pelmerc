@@ -75,7 +75,7 @@ if has("autocmd")
     au FileType py set omnifunc=pythoncomplete#Complete
 
     let g:syntastic_python_checkers=['flake8', 'pyflakes']
-    let g:syntastic_python_flake8_args="--ignore=E501,E241"
+    let g:syntastic_python_flake8_args=""
     let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
     let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 endif
