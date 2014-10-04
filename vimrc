@@ -59,6 +59,7 @@ autocmd!
 if has("autocmd")
     " Restore cursor position
     au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+    au BufRead,BufNewFile *.md set filetype=markdown
 
     " Filetypes (au = autocmd)
     au FileType helpfile set nonumber      " no line numbers when viewing help
