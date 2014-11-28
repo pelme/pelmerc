@@ -82,7 +82,6 @@ if has("autocmd")
 endif
 
 " shortcuts
-nnoremap ; :
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
 nmap <silent> <leader>/ :nohlsearch<cr>
@@ -156,7 +155,7 @@ if !empty($LIGHT_THEME)
     colorscheme lucius
     LuciusWhite
 else
-    colorscheme molokai
+    colorscheme badwolf
 endif
 
 set t_Co=256
