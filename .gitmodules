@@ -100,3 +100,6 @@
 [submodule "vim/bundle/nginx"]
 	path = vim/bundle/nginx
 	url = https://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "vim/bundle/vim-atom-dark"]
+	path = vim/bundle/vim-atom-dark
+	url = https://github.com/gosukiwi/vim-atom-dark.git

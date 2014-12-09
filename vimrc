@@ -155,7 +155,7 @@ if !empty($LIGHT_THEME)
     colorscheme lucius
     LuciusWhite
 else
-    colorscheme badwolf
+    colorscheme atom-dark-256
 endif
 
 set t_Co=256
