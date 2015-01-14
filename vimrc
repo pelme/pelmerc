@@ -111,6 +111,8 @@ nmap <leader>b :CtrlPBuffer<cr>
 nmap <leader>f :CtrlPClearAllCaches<cr>
 
 nnoremap <leader>a :Ag<space>
+" put the word under to cursor on the system clipboard
+nnoremap <leader>y "*yiw
 
 " buffer management
 nmap <leader>l :ls<cr>
