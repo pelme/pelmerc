@@ -1,7 +1,6 @@
 snippet pkscript
 	# -*- coding: utf-8 -*
-	from __future__ import unicode_literals
-	from __future__ import print_function
+	from __future__ import print_function, division, absolute_import, unicode_literals
 
 	from pk.utils.cli import command
 
@@ -13,3 +12,9 @@ snippet pkscript
 
 	if __name__ == '__main__':
 		main()
+
+snippet py3plz
+	# -*- coding: utf-8 -*
+	from __future__ import print_function, division, absolute_import, unicode_literals
+
+	${1}
