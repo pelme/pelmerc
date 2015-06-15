@@ -3,7 +3,7 @@
 PELMERC=$HOME/.pelmerc
 BACKUP_DESTINATION=$HOME/.pelmerc_backup
 
-link() {
+_link() {
     filename=$1
     symlink_name=$2
 
@@ -23,7 +23,13 @@ link_config() {
     _link $PELMERC/$1 ~/.$1
 }
 
+link_fish() {
+    mkdir -p $HOME/.config/fish
+    _link $PELMERC/fish/$1 ~/.config/fish/$1
+}
+
 link_bin() {
+    mkdir -p $HOME/bin
     _link $PELMERC/bin/$1 ~/bin/$1
 }
 
@@ -38,10 +44,9 @@ link_config ackrc
 link_config bpython
 link_config psqlrc
 
+link_fish config.fish
+link_fish functions
 
-mkdir -p $HOME/.virtualenvs
-
-mkdir -p $HOME/bin
 link_bin prc_install
 link_bin prc_update
 link_bin cleanup.sh
@@ -54,6 +59,8 @@ link_bin sublmod
 link_bin mirror_tests
 link_bin sphinx-autobuild-html
 link_bin shell_light
+
+mkdir -p $HOME/.virtualenvs
 
 # Do not bother if ssh-copy-id is provided
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
