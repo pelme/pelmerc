@@ -46,6 +46,7 @@ link_config psqlrc
 
 link_fish config.fish
 link_fish functions
+link_fish config.d
 
 link_bin prc_install
 link_bin prc_update
