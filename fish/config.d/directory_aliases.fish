@@ -1,4 +1,8 @@
 
+function cd..
+    cd ..
+end
+
 function ...
     cd ../..
 end
