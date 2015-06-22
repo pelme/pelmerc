@@ -3,5 +3,5 @@ if not set -q __pelme_short_hostname
 end
 
 function fish_title
-    echo -ns $USER @ $__pelme_short_hostname : (prompt_pwd)
+    echo -ns (prompt_pwd) " - " $USER @ $__pelme_short_hostname
 end
