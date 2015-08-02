@@ -6,5 +6,5 @@ function grb
         set num_commits 5
     end
 
-    echo git rebase -i "HEAD~$num_commits"
+    git rebase -i "HEAD~$num_commits"
 end
