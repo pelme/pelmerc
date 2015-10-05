@@ -1,3 +1,6 @@
+[commit]
+    template = ~/.pelmerc/git_commit_template.txt
+
 [user]
 	name = Andreas Pelme
 	email = andreas@pelme.se
