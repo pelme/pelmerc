@@ -9,7 +9,7 @@ set -g __pelme_prompt_symbol →
 set -g __pelme_git_color green
 set -g __pelme_virtualenv_color cyan
 
-set -g __fish_git_prompt_color_branch $__pelme_git_color bold
+set -g __fish_git_prompt_color_branch $__pelme_git_color --bold
 
 function fish_prompt --description 'Write out the prompt, Andreas style'
 
