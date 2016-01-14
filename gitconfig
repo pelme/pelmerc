@@ -37,3 +37,5 @@
 [diff "po"]
     textconv=msgcat --no-location --no-wrap --sort-output
 
+[merge]
+	ff = only
