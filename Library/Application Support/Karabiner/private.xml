@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<root>
+
+    <deviceproductdef>
+        <productname>SCULPT_ERGONOMIC</productname>
+        <productid>0x07a5</productid>
+    </deviceproductdef>
+
+    <item>
+        <name>Sculpt: Mouse 4 -> Mission Control</name>
+        <identifier>sculpt_ergonomic.button5_to_mission_control</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            PointingButton::BUTTON4,
+            KeyCode::MISSION_CONTROL, Option::NOREPEAT
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F7 -> Previous song</name>
+        <identifier>sculpt_ergonomic.f7</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen> __KeyToKey__ KeyCode::F7, ConsumerKeyCode::MUSIC_PREV
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F8 -> Next song</name>
+        <identifier>sculpt_ergonomic.f8</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F8,
+            ConsumerKeyCode::MUSIC_NEXT
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F9 -> Play/pause</name>
+        <identifier>sculpt_ergonomic.f9</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F9,
+            ConsumerKeyCode::MUSIC_PLAY
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F10 -> Mute</name>
+        <identifier>sculpt_ergonomic.f10</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F10,
+            ConsumerKeyCode::VOLUME_MUTE
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F11 -> Volume down</name>
+        <identifier>sculpt_ergonomic.f11</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F11,
+            ConsumerKeyCode::VOLUME_DOWN
+        </autogen>
+    </item>
+
+    <item>
+        <name>Sculpt: F12 -> Volume up</name>
+        <identifier>sculpt_ergonomic.f12</identifier>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F12,
+            ConsumerKeyCode::VOLUME_UP
+        </autogen>
+    </item>
+
+    <item>
+        <name>ctrl+§ -> §</name>
+        <identifier>private.danish_dollar_modifier</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DANISH_DOLLAR, ModifierFlag::CONTROL_L,
+            KeyCode::DANISH_DOLLAR,
+        </autogen>
+    </item>
+
+    <item>
+        <name>§ -> ESC</name>
+        <identifier>private.danish_dollar_esc</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DANISH_DOLLAR, ModifierFlag::NONE,
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+
+</root>
