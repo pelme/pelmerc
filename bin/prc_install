@@ -4,23 +4,28 @@ PELMERC=$HOME/.pelmerc
 BACKUP_DESTINATION=$HOME/.pelmerc_backup
 
 _link() {
-    filename=$1
-    symlink_name=$2
+    filename="$1"
+    symlink_name="$2"
 
     # Does the target already exist and is not a symlink?
-    if [ -e $symlink_name ] && [ ! -h $symlink_name ]; then
+    if [ -e "$symlink_name" ] && [ ! -h "$symlink_name" ]; then
         echo "$symlink_name already exists, please remove it and run prc_install again"
         exit 1
     fi
 
     echo "Setting up file $symlink_name -> $filename"
-    rm -f $symlink_name
-    ln -sf $filename $symlink_name
+    rm -f "$symlink_name"
+    ln -sf "$filename" "$symlink_name"
 }
 
 
 link_config() {
     _link $PELMERC/$1 ~/.$1
+}
+
+link_home() {
+    mkdir -p "$HOME/(dirname $1)"
+    _link "$PELMERC/$1" "$HOME/$1"
 }
 
 link_fish() {
