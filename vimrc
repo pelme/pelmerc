@@ -60,6 +60,7 @@ if has("autocmd")
     " Restore cursor position
     au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
     au BufRead,BufNewFile *.md set filetype=markdown
+    au BufRead,BufNewFile *.es6 set filetype=javascript
 
     " Filetypes (au = autocmd)
     au FileType helpfile set nonumber      " no line numbers when viewing help
@@ -79,6 +80,9 @@ if has("autocmd")
     let g:syntastic_python_flake8_args=""
     let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
     let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
+
+    " http://vim.wikia.com/wiki/Update_the_diff_view_automatically
+    autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 endif
 
 " shortcuts
@@ -109,6 +113,7 @@ cabbr <expr> %% expand('%:p:h')
 nmap <leader>t :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
 nmap <leader>f :CtrlPClearAllCaches<cr>
+imap jj <C-c>
 
 nnoremap <leader>a :Ag<space>
 " put the word under to cursor on the system clipboard
