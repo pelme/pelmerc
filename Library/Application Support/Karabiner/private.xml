@@ -100,4 +100,33 @@
         </autogen>
     </item>
 
+	<item>
+		<name>ctrl+[ -> å</name>
+		<identifier>private.a_ring</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+			KeyCode::A, ModifierFlag::OPTION_L,
+		</autogen>
+	</item>
+
+	<item>
+		<name>ctrl+' -> ä</name>
+		<identifier>private.a_dots</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::QUOTE, ModifierFlag::CONTROL_L,
+			KeyCode::U, ModifierFlag::OPTION_L, KeyCode::A,
+		</autogen>
+	</item>
+
+	<item>
+		<name>ctrl+; -> ö</name>
+		<identifier>private.o_dots</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
+			KeyCode::U, ModifierFlag::OPTION_L, KeyCode::O,
+		</autogen>
+	</item>
 </root>
