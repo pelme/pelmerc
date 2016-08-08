@@ -118,3 +118,6 @@
 [submodule "vim/bundle/yajs"]
 	path = vim/bundle/yajs
 	url = https://github.com/othree/yajs.vim.git
+[submodule "vim/bundle/vim-nix"]
+	path = vim/bundle/vim-nix
+	url = https://github.com/LnL7/vim-nix.git
