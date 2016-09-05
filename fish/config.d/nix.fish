@@ -8,7 +8,7 @@ if test -n "$HOME"
         /nix/store/4lrli8ng5i54k14id152svvp1kvqsn92-coreutils-8.21/bin/ln -s "$_NIX_DEF_LINK" "$NIX_LINK"
     end
 
-    set PATH $NIX_LINK/bin $NIX_LINK/sbin $PATH
+    set PATH $NIX_LINK/bin $PATH
 
     # Subscribe the root user to the Nixpkgs channel by default.
     if [ ! -e $HOME/.nix-channels ]
