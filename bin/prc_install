@@ -3,8 +3,8 @@
 PELMERC=$HOME/.pelmerc
 BACKUP_DESTINATION=$HOME/.pelmerc_backup
 
-_link() {
-    filename="$1"
+link() {
+    filename="$PELMERC/$1"
     symlink_name="$2"
 
     # Does the target already exist and is not a symlink?
@@ -15,32 +15,34 @@ _link() {
 
     echo "Setting up file $symlink_name -> $filename"
     rm -f "$symlink_name"
+    mkdir -p $(dirname "$2")
     ln -sf "$filename" "$symlink_name"
 }
 
 
 link_config() {
-    _link $PELMERC/$1 ~/.$1
+    link $1 ~/.$1
 }
 
 link_home() {
-    mkdir -p "$HOME/(dirname $1)"
-    _link "$PELMERC/$1" "$HOME/$1"
+    link "$1" "$HOME/$1"
 }
 
 link_fish() {
-    mkdir -p $HOME/.config/fish
-    _link $PELMERC/fish/$1 ~/.config/fish/$1
+    link fish/$1 ~/.config/fish/$1
 }
 
 link_bin() {
-    mkdir -p $HOME/bin
-    _link $PELMERC/bin/$1 ~/bin/$1
+    link bin/$1 ~/bin/$1
 }
 
-link_config zshrc
 link_config vimrc
-link_config vim
+link vim-plug/plug.vim ~/.vim/autoload/plug.vim
+
+link vimrc ~/.config/nvim/init.vim
+link vim-plug/plug.vim ~/.config/nvim/autoload/plug.vim
+
+link_config zshrc
 link_config gitconfig
 link_config gitattributes
 link_config githelpers

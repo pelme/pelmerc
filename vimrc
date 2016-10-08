@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugins')
 
 Plug 'mhartington/oceanic-next'  " color theme
 Plug 'vim-airline/vim-airline'  " nicer status line

@@ -7,3 +7,6 @@
 [submodule "fish/external/virtualfish"]
 	path = fish/external/virtualfish
 	url = https://github.com/adambrenecki/virtualfish.git
+[submodule "vim-plug"]
+	path = vim-plug
+	url = https://github.com/junegunn/vim-plug.git
