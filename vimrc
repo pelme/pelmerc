@@ -27,6 +27,7 @@ Plug 'saltstack/salt-vim'  " salt state file support
 
 Plug 'ryanoasis/vim-devicons' " nice icons. requires installing nerd font.
                               " must be loaded late to be used by ctrlp etc
+Plug '~/code/vim-testfile'
 
 call plug#end()
 
