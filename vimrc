@@ -16,7 +16,8 @@ Plug 'tpope/vim-fugitive'  " git integration
 Plug 'tpope/vim-repeat'  " make it possible to use . (repeat command) for plugins
 
 Plug 'ervandew/supertab'  " make tab provivde autocomplete
-Plug 'rking/ag.vim'  " invoke ag (the silver searcher)
+Plug 'dyng/ctrlsf.vim'
+
 Plug 'airblade/vim-gitgutter'  " mark added/changed/removed
 
 Plug 'davidhalter/jedi-vim'  " python autocompletion
@@ -68,29 +69,27 @@ let mapleader = ","
 nmap <leader>w :w<cr>
 nmap <leader>x :x<cr>
 nmap <silent> <leader>/ :nohlsearch<cr>  " clear search highlight
-nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>  " search/replace current word
+" search/replace current word
+nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap S diw"0P " 'stamp' the word under the cursor
 
 map <leader>e :e ~/.vimrc<cr>      " edit my .vimrc file
-map <leader>u :source ~/.vimrc<cr> " update the system settings from my vimrc file
 
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#use_splits_not_buffers = "bottom"
 let g:jedi#goto_assignments_command = ""
 let g:jedi#goto_definitions_command = ""
 let g:jedi#usages_command = ""
-nnoremap <leader>a :Ag<space>
+nnoremap <leader>f :CtrlSF<space>
 
-noremap <leader>g :call jedi#goto_assignments()<cr>
+noremap <leader>a :call jedi#goto_assignments()<cr>
 noremap <leader>d :call jedi#goto_definitions()<cr>
-noremap <leader>n :call jedi#usages()<cr>
+noremap <leader>u :call jedi#usages()<cr>
 nnoremap <leader>y "*yiw  " put the word under to cursor on the system clipboard
 
 nmap <leader>t :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
-nmap <leader>f :CtrlPClearAllCaches<cr>
 imap jj <C-c>
-
 
 nnoremap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
 nnoremap <leader><leader> :b#<cr>  " switch to last buffer
