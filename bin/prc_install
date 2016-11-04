@@ -41,6 +41,7 @@ link vim-plug/plug.vim ~/.vim/autoload/plug.vim
 
 link vimrc ~/.config/nvim/init.vim
 link vim-plug/plug.vim ~/.config/nvim/autoload/plug.vim
+link vim/UltiSnips ~/.config/nvim/UltiSnips
 
 link_config zshrc
 link_config gitconfig
