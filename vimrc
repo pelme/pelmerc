@@ -95,7 +95,10 @@ nnoremap <leader>f :CtrlSF<space>
 noremap <leader>a :call jedi#goto_assignments()<cr>
 noremap <leader>d :call jedi#goto_definitions()<cr>
 noremap <leader>u :call jedi#usages()<cr>
-nnoremap <leader>y "*yiw  " put the word under to cursor on the system clipboard
+
+" yank to system clipboard
+vmap <leader>y "*y
+nmap <leader>y "*y
 
 nmap <leader>t :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
