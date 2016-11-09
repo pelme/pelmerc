@@ -156,4 +156,7 @@ autocmd BufWinLeave * call clearmatches()
 " create virtualenv with:
 " $ new -p (which python3.5) neovim3
 " $ pip install neovim
+" $ new -p (which python2.7) neovim2
+" $ pip install neovim
+let g:python_host_prog=$HOME . '/.virtualenvs/neovim2/bin/python'
 let g:python3_host_prog=$HOME . '/.virtualenvs/neovim3/bin/python'
