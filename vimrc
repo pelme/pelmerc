@@ -141,7 +141,7 @@ if (has("termguicolors"))
 endif
 set background=dark
 colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+let g:airline_theme='solarized'
 let g:oceanic_next_terminal_italic = 1 " enable italics, disabled by default
 let g:oceanic_next_terminal_bold = 1 " enable bold, disabled by default
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1  " non-block cursor in insert mode
