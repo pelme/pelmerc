@@ -50,6 +50,7 @@ set expandtab       " insert spaces when pressing tab
 set tabstop=4       " numbers of spaces of tab character
 set noswapfile      " make vim work with watchdog
 set nowritebackup   " avoid backup file
+set cursorline      " highlight the current line
 
 if has("autocmd")
     " Restore cursor position
