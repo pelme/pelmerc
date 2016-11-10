@@ -96,6 +96,8 @@ nnoremap <leader>f :CtrlSF<space>
 noremap <leader>a :call jedi#goto_assignments()<cr>
 noremap <leader>d :call jedi#goto_definitions()<cr>
 noremap <leader>u :call jedi#usages()<cr>
+nnoremap <leader>g :Gstatus<cr>
+nnoremap <leader>c :Gcommit<cr>
 
 " yank to system clipboard
 vmap <leader>y "*y
