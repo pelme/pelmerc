@@ -25,6 +25,7 @@ Plug 'hynek/vim-python-pep8-indent'  " sane python indentation
 Plug 'kchmck/vim-coffee-script'  " coffee script support
 Plug 'isRuslan/vim-es6'  " es6 support
 Plug 'saltstack/salt-vim'  " salt state file support
+Plug 'dag/vim-fish'  " fish syntax
 
 Plug 'ryanoasis/vim-devicons' " nice icons. requires installing nerd font.
                               " must be loaded late to be used by ctrlp etc
