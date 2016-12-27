@@ -63,17 +63,10 @@ if has("autocmd")
 
     au BufRead,BufNewFile *.yml set foldmethod=indent
 
-    " http://vim.wikia.com/wiki/VimTip991
-    " save/restore folds automatically
-    au BufWinLeave * silent! mkview
-    au BufWinEnter * silent! loadview
-
     " http://vim.wikia.com/wiki/Update_the_diff_view_automatically
     autocmd BufWritePost * if &diff == 1 | diffupdate | endif
     autocmd! BufWritePost * Neomake " invoke neomake on save
 endif
-
-set foldlevelstart=20
 
 " shortcuts
 let mapleader = ","
