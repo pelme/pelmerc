@@ -61,8 +61,6 @@ if has("autocmd")
     au BufRead,BufNewFile *.txt set filetype=markdown
     au BufRead,BufNewFile *.es6 set filetype=javascript
 
-    au BufRead,BufNewFile *.yml set foldmethod=indent
-
     " http://vim.wikia.com/wiki/Update_the_diff_view_automatically
     autocmd BufWritePost * if &diff == 1 | diffupdate | endif
     autocmd! BufWritePost * Neomake " invoke neomake on save
