@@ -4,6 +4,8 @@ Plug 'rakr/vim-one'
 Plug 'vim-airline/vim-airline'  " nicer status line
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+
 Plug 'ctrlpvim/ctrlp.vim'  " find files with fuzzymatching
 
 Plug 'SirVer/ultisnips'  " snippet manager
