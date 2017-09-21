@@ -32,6 +32,8 @@ Plug 'dag/vim-fish'  " fish syntax
 Plug 'ryanoasis/vim-devicons' " nice icons. requires installing nerd font.
                               " must be loaded late to be used by ctrlp etc
 Plug 'robbles/logstash.vim'
+
+Plug 'vim-python/python-syntax'
 Plug '~/code/vim-testfile'
 
 call plug#end()
@@ -157,3 +159,5 @@ autocmd BufWinLeave * call clearmatches()
 " $ pip install neovim
 let g:python_host_prog=$HOME . '/.virtualenvs/neovim2/bin/python'
 let g:python3_host_prog=$HOME . '/.virtualenvs/neovim3/bin/python'
+
+let g:python_highlight_all = 1
