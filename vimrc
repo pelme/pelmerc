@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugins')
 
-Plug 'mhartington/oceanic-next'  " color theme
+Plug 'rakr/vim-one'
 Plug 'vim-airline/vim-airline'  " nicer status line
 Plug 'vim-airline/vim-airline-themes'
 
@@ -132,10 +132,10 @@ if (has("termguicolors"))
     set termguicolors  " enable lots of colors
 endif
 set background=dark
-colorscheme OceanicNext
-let g:airline_theme='solarized'
 let g:oceanic_next_terminal_italic = 1 " enable italics, disabled by default
 let g:oceanic_next_terminal_bold = 1 " enable bold, disabled by default
+colorscheme one
+
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1  " non-block cursor in insert mode
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['es6'] = ''  " pretty icon for .es6 files
