@@ -161,3 +161,8 @@ let g:python_host_prog=$HOME . '/.virtualenvs/neovim2/bin/python'
 let g:python3_host_prog=$HOME . '/.virtualenvs/neovim3/bin/python'
 
 let g:python_highlight_all = 1
+
+" Stolen from https://github.com/blueyed/dotfiles/blob/12ff8d2572e5333ef4a11c0c56f630e8d0e4d13f/vimrc
+command! -range=% -nargs=* Isort :<line1>,<line2>! isort --lines 79 <args> -
+vmap <leader>i :Isort<cr>
+nmap <leader>i :Isort<cr>
