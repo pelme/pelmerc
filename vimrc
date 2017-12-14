@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline'  " nicer status line
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'HerringtonDarkholme/yats.vim'
 
 Plug 'ctrlpvim/ctrlp.vim'  " find files with fuzzymatching
 
