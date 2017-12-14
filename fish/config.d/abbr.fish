@@ -21,3 +21,7 @@ abbr --add wip git add --all \; git commit -m WIP
 abbr --add dj django-admin
 abbr --add djr django-admin runserver
 abbr --add djs django-admin shell_plus
+
+abbr --add cd.. cd ..
+abbr --add cd... cd ../..
+abbr --add cd.... cd ../../..
