@@ -1,4 +1,4 @@
-if test -d $HOME/.nix-profile
+if status is-login; and test -d $HOME/.nix-profile
     set NIX_LINK "$HOME/.nix-profile"
 
     # Set the default profile.
