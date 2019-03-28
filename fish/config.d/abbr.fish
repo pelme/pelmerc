@@ -9,12 +9,14 @@ abbr --add gpr git pull --rebase
 abbr --add grb git rebase
 abbr --add gp git push
 abbr --add gpf git push --force-with-lease
-abbr --add grbi git rebase -i HEAD~5
-abbr --add grbm git rebase master
+abbr --add gri git rebase -i origin/master
+abbr --add gr "git fetch; git rebase origin/master"
+abbr --add glm git log --oneline --reverse origin/master..
 abbr --add gbr git branch
+abbr --add gdm git diff origin/master
 abbr --add gaa git add --all
-abbr --add grs git reset
 abbr --add grm git rm
+abbr --add grs git reset
 abbr --add grsh git reset HEAD^
 abbr --add wip git add --all \; git commit -m WIP
 
