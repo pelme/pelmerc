@@ -21,3 +21,4 @@ for x in $PELMERC/zsh/*; do
 done
 
 source $PELMERC/autoenv/activate.sh
+if [ -e /Users/andreas/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/andreas/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

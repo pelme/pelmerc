@@ -20,3 +20,5 @@
 	precomposeunicode = true
 [branch]
 	autosetupmerge = true
+[diff]
+	noprefix = true

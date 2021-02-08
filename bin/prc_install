@@ -56,7 +56,7 @@ link_home "Library/Application Support/Karabiner/private.xml"
 
 link_fish config.fish
 link_fish functions
-link_fish config.d
+link_fish conf.d
 
 link_bin prc_install
 link_bin prc_update
