@@ -1,5 +1,5 @@
 function done
     set branch (git rev-parse --abbrev-ref HEAD)
-    git checkout master
+    git switch master
     git branch -D $branch
 end
