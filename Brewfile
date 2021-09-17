@@ -34,7 +34,6 @@ brew "terraform"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
-brew "unrar"
 brew "watchman"
 brew "wget"
 brew "ykman"
@@ -43,5 +42,7 @@ brew "redis", restart_service: true
 brew "postgresql", restart_service: true
 
 cask "aws-vault"
-cask "borgbackup"
 cask "chromedriver"
+cask "firefox"
+cask "microsoft-office"
+cask "slack"
