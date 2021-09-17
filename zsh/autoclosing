@@ -1,7 +1,0 @@
-
-autoclose_doublequote() { LBUFFER="$LBUFFER\"\""; zle backward-char }
-
-
-# Move cursor one step to left when entering double double quotes ("")
-zle -N autoclose_doublequote
-bindkey \"\" autoclose_doublequote

@@ -43,7 +43,6 @@ link vimrc ~/.config/nvim/init.vim
 link vim-plug/plug.vim ~/.config/nvim/autoload/plug.vim
 link vim/UltiSnips ~/.config/nvim/UltiSnips
 
-link_config zshrc
 link_config gitconfig
 link_config gitattributes
 link_config githelpers
@@ -69,7 +68,6 @@ link_bin poedit
 link_bin sublmod
 link_bin mirror_tests
 link_bin sphinx-autobuild-html
-link_bin shell_light
 
 mkdir -p $HOME/.virtualenvs
 
@@ -77,5 +75,3 @@ mkdir -p $HOME/.virtualenvs
 which ssh-copy-id > /dev/null || link_bin ssh-copy-id
 
 echo "All good!"
-echo " - Use rehash to update PATH with new commands"
-echo " - Use chsh -s /bin/zsh to change shell"
