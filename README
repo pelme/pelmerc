@@ -2,4 +2,7 @@ My default configs, put into git for easy synchronization between multiple machi
 
 Install with:
 
-(U="https://raw.github.com/pelme/pelmerc/master/bootstrap.sh" ; (which wget > /dev/null && wget $U -O -) || curl $U) | sh
+git clone https://github.com/pelme/pelmerc.git ~/.pelmerc
+cd .pelmerc
+git submodule update --init
+~/.pelmerc/bin/prc_install
