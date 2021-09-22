@@ -24,7 +24,7 @@ function fish_prompt --description 'Write out the prompt, Andreas style'
 
     if set -q POETRY_ACTIVE
         echo -n -s (set_color $__pelme_poetry_color) $__pelme_start_char "$__fish_prompt_normal"
-        echo -n -s (set_color -o $__pelme_poetry_color) poetry  "$__fish_prompt_normal"
+        echo -n -s (set_color -o $__pelme_poetry_color) py  "$__fish_prompt_normal"
         echo -n -s (set_color $__pelme_poetry_color) $__pelme_end_char " $__fish_prompt_normal"
     else if set -q VIRTUAL_ENV
         echo -n -s (set_color $__pelme_virtualenv_color) $__pelme_start_char "$__fish_prompt_normal"
