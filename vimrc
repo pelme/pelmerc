@@ -14,28 +14,10 @@ if !exists('g:vscode')
 
     Plug 'ctrlpvim/ctrlp.vim'  " find files with fuzzymatching
 
-    Plug 'SirVer/ultisnips'  " snippet manager
-    Plug 'honza/vim-snippets'  " snippets
-
-    Plug 'neomake/neomake'  " linting with flake8, eslint
-    Plug 'tpope/vim-fugitive'  " git integration
-
-    Plug 'ervandew/supertab'  " make tab provivde autocomplete
-    Plug 'dyng/ctrlsf.vim'
-
-    Plug 'airblade/vim-gitgutter'  " mark added/changed/removed
-
-    Plug 'davidhalter/jedi-vim'  " python autocompletion
-    Plug 'hynek/vim-python-pep8-indent'  " sane python indentation
     Plug 'saltstack/salt-vim'  " salt state file support
     Plug 'dag/vim-fish'  " fish syntax
 
-    Plug 'ryanoasis/vim-devicons' " nice icons. requires installing nerd font.
-                                  " must be loaded late to be used by ctrlp etc
-    Plug 'robbles/logstash.vim'
-
     Plug 'vim-python/python-syntax'
-    Plug '~/code/vim-testfile'
 endif
 
 
@@ -71,10 +53,6 @@ if !exists('g:vscode')
         au BufRead,BufNewFile *.es6 set filetype=javascript
         au BufRead,BufNewFile *.html.dj set filetype=htmldjango
         au BufRead,BufNewFile *.html.ng set filetype=html
-
-        " http://vim.wikia.com/wiki/Update_the_diff_view_automatically
-        autocmd BufWritePost * if &diff == 1 | diffupdate | endif
-        autocmd! BufWritePost * Neomake " invoke neomake on save
     endif
 
     " shortcuts
