@@ -45,20 +45,22 @@ brew "redis", restart_service: true
 brew "postgresql", restart_service: true
 
 cask "1password"
-cask "aws-vault"
 cask "arq"
+cask "aws-vault"
 cask "chromedriver"
 cask "firefox"
 cask "font-fira-code"
 cask "google-chrome"
 cask "google-drive"
+cask "istat-menus"
 cask "iterm2"
 cask "microsoft-office"
+cask "microsoft-teams"
+cask "postico"
 cask "slack"
 cask "spotify"
 cask "visual-studio-code"
-cask "istat-menus"
-cask "postico"
+cask "zoom"
 
 mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
