@@ -61,6 +61,7 @@ cask "slack"
 cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
+cask "teamviewer"
 
 mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
