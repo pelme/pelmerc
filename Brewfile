@@ -63,6 +63,7 @@ cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
 cask "teamviewer"
+cask "homebrew/cask-drivers/yubico-yubikey-manager"
 
 mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
