@@ -5,20 +5,18 @@
 	name = Andreas Pelme
 	email = andreas@pelme.se
 
-[color]
-    ui = auto
-
 [alias]
     recent = !git branch --sort=-committerdate | head -n10
+    done = "!branch=$(git rev-parse --abbrev-ref HEAD); git switch master && git branch -D $branch"
 
-[push]
-	default = current
 
-[diff "po"]
-    textconv=msgcat --no-location --no-wrap --sort-output
 [core]
 	precomposeunicode = true
-[branch]
-	autosetupmerge = true
+
 [diff]
 	noprefix = true
+
+[pull]
+	rebase = true
+[push]
+	default = current
