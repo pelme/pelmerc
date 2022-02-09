@@ -9,8 +9,7 @@ abbr --add grb git rebase
 abbr --add grbi git rebase -i origin/master
 abbr --add gp git push
 abbr --add gpf git push --force-with-lease
-abbr --add gpm git pull --rebase origin master
-abbr --add gpr git pull --rebase
+abbr --add gpm git pull origin master
 abbr --add glm git log --oneline --reverse origin/master..
 abbr --add gbr git branch
 abbr --add gdm git diff origin/master
