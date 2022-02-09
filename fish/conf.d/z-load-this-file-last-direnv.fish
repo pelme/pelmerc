@@ -1,2 +1,2 @@
-eval (direnv hook fish)
-eval (direnv export fish)
+direnv hook fish | source
+direnv export fish | source
