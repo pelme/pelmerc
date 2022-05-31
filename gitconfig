@@ -14,7 +14,7 @@
 	precomposeunicode = true
 
 [diff]
-	noprefix = true
+    noprefix = true
 
 [pull]
 	rebase = true

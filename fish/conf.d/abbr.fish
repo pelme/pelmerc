@@ -6,13 +6,13 @@ abbr --add gl git log
 abbr --add gds git diff --staged
 abbr --add gsw git switch
 abbr --add grb git rebase
-abbr --add grbi git rebase -i origin/master
+abbr --add grbi git rebase -i origin/main
 abbr --add gp git push
 abbr --add gpf git push --force-with-lease
-abbr --add gpm git pull origin master
-abbr --add glm git log --oneline --reverse origin/master..
+abbr --add gpm git pull origin main
+abbr --add glm git log --oneline --reverse origin/main..
 abbr --add gbr git branch
-abbr --add gdm git diff origin/master
+abbr --add gdm git diff origin/main
 abbr --add gaa git add --all
 abbr --add gam git commit -a --amend
 abbr --add gre git restore
