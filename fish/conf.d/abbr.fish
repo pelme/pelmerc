@@ -6,7 +6,7 @@ abbr --add gl git log
 abbr --add gds git diff --staged
 abbr --add gsw git switch
 abbr --add grb git rebase
-abbr --add grbi git rebase -i origin/main
+abbr --add gri git rebase -i origin/main
 abbr --add gp git push
 abbr --add gpf git push --force-with-lease
 abbr --add gpm git pull origin main
