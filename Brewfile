@@ -44,6 +44,7 @@ brew "watchman"
 brew "wget"
 brew "yarn"
 brew "ykman"
+
 brew "redis", restart_service: true
 brew "postgresql", restart_service: true
 
@@ -51,8 +52,8 @@ cask "1password"
 cask "arq"
 cask "aws-vault"
 cask "chromedriver"
-cask "firefox"
 cask "discord"
+cask "firefox"
 cask "font-fira-code"
 cask "google-chrome"
 cask "google-drive"
@@ -63,11 +64,11 @@ cask "poedit"
 cask "postico"
 cask "slack"
 cask "spotify"
-cask "visual-studio-code"
-cask "zoom"
 cask "teamviewer"
+cask "visual-studio-code"
 cask "yubico-authenticator"
 cask "yubico-yubikey-manager"
+cask "zoom"
 
 mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
