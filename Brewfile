@@ -58,7 +58,6 @@ cask "google-chrome"
 cask "google-drive"
 cask "istat-menus"
 cask "iterm2"
-cask "microsoft-office"
 cask "microsoft-teams"
 cask "poedit"
 cask "postico"
@@ -67,7 +66,8 @@ cask "spotify"
 cask "visual-studio-code"
 cask "zoom"
 cask "teamviewer"
-cask "homebrew/cask-drivers/yubico-yubikey-manager"
+cask "yubico-authenticator"
+cask "yubico-yubikey-manager"
 
 mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
