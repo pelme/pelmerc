@@ -44,7 +44,6 @@ brew "watchman"
 brew "wget"
 brew "yarn"
 brew "ykman"
-brew "logcli"
 brew "redis", restart_service: true
 brew "postgresql", restart_service: true
 
@@ -74,4 +73,7 @@ mas "BetterSnapTool", id: 417375580
 mas "ColorSlurp", id: 1287239339
 mas "Be Focused Pro - Focus Timer", id: 961632517
 mas "Messenger", id: 1480068668
-#mas "Xcode", id: 497799835
+mas "Microsoft Word", id: 462054704
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Xcode", id: 497799835
