@@ -7,7 +7,7 @@
 
 [alias]
     recent = !git branch --sort=-committerdate | head -n10
-    done = "!branch=$(git rev-parse --abbrev-ref HEAD); git switch master && git branch -D $branch"
+    done = "!branch=$(git rev-parse --abbrev-ref HEAD); git switch main && git branch -D $branch"
 
 
 [core]
